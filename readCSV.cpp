@@ -27,9 +27,7 @@ vector<vector<double>> readCSV(char* path, bool print) {
 
 
 		cline = *it;
-		if(print)
-		cout << "Processing line:\n" << cline << endl;
-
+		
 		bool foundcomma = true;
 		int lastoffset = 0;
 		int lastcomma = 0;
