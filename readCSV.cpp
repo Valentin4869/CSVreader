@@ -22,8 +22,8 @@ vector<vector<double>> readCSV(char* path, bool print) {
 
 		istringstream ss(line);
 		istream_iterator<string> begin(ss), end;
-		vector<string> arrayTokens(begin, end);
-		auto it = arrayTokens.begin();
+		vector<string> lineTokens(begin, end);
+		auto it = lineTokens.begin();
 
 
 		cline = *it;
