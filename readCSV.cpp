@@ -1,3 +1,11 @@
+#include <iostream>
+#include <fstream>
+#include <assert.h>
+#include <sstream>
+#include <vector>
+#include <iterator>
+#include <sstream>
+
 vector<vector<double>> readCSV(char* path, bool print) {
 
 
