@@ -16,8 +16,7 @@ vector<vector<double>> readCSV(char* path, bool print) {
 
 	in.open(path);
 	assert(in.is_open());
-
-	int c = 0;
+	
 	while (getline(in, line)) {
 
 		istringstream ss(line);
@@ -60,7 +59,7 @@ vector<vector<double>> readCSV(char* path, bool print) {
 
 	//print
 	if (print) {
-		cout << "\n\nelements:"<<c<<"  " << X.size()<<"x"<<X.front().size() << endl;
+		cout << "\n\nelements:"<< X.size()<<"x"<<X.front().size() << endl;
 		for (int i = 0; i < X.size(); i++)
 			for (int j = 0; j < X.front().size(); j++)
 				printf("%i,%i: %f\n", i, j, X[i][j]);
